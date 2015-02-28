@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.05.00">
+    <object class="Bank" id="{b810fee2-4de3-4c91-b117-49df99e37607}">
+        <property name="name">
+            <value>UI</value>
+        </property>
+        <relationship name="folder">
+            <destination>{10d09cca-fa17-444a-896b-50d86e17ce00}</destination>
+        </relationship>
+        <relationship name="buildSettings">
+            <destination>{0cd86ada-45df-4839-9df5-9504dd1a44f0}</destination>
+        </relationship>
+        <relationship name="buildHash">
+            <destination>{c8747373-8673-45f9-bdae-188e8b79267c}</destination>
+        </relationship>
+    </object>
+    <object class="DesktopBuildSetting" id="{0cd86ada-45df-4839-9df5-9504dd1a44f0}">
+        <relationship name="compressionSettings">
+            <destination>{c7bb496e-30f2-4388-bcf3-d678c77b2a22}</destination>
+            <destination>{0266a938-96b7-4cab-bb7c-37991f339357}</destination>
+            <destination>{9f49f61e-2edc-424b-9966-9db2155520de}</destination>
+        </relationship>
+        <relationship name="activeCompressionSetting">
+            <destination>{c7bb496e-30f2-4388-bcf3-d678c77b2a22}</destination>
+        </relationship>
+        <relationship name="buildHash">
+            <destination>{bc498d04-8cd5-4b70-a397-a3a253c0c772}</destination>
+        </relationship>
+    </object>
+    <object class="BankBuildHash" id="{c8747373-8673-45f9-bdae-188e8b79267c}"/>
+    <object class="LossyCompressionSetting" id="{c7bb496e-30f2-4388-bcf3-d678c77b2a22}">
+        <property name="type">
+            <value>Vorbis</value>
+        </property>
+    </object>
+    <object class="PCMCompressionSetting" id="{0266a938-96b7-4cab-bb7c-37991f339357}">
+        <property name="type">
+            <value>ADPCM</value>
+        </property>
+    </object>
+    <object class="PCMCompressionSetting" id="{9f49f61e-2edc-424b-9966-9db2155520de}">
+        <property name="type">
+            <value>PCM</value>
+        </property>
+    </object>
+    <object class="BankBuildHash" id="{bc498d04-8cd5-4b70-a397-a3a253c0c772}"/>
+</objects>
