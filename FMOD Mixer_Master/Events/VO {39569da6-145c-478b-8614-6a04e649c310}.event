@@ -28,10 +28,6 @@
         <relationship name="timeline">
             <destination>{57f224e0-4c93-4385-9a89-2ce7f0e5f18c}</destination>
         </relationship>
-        <relationship name="parameters">
-            <destination>{7a8f307b-913b-4e72-b0a2-a1d5c81bacb8}</destination>
-            <destination>{4280deba-1b73-43d2-9bde-764ca82437a1}</destination>
-        </relationship>
     </object>
     <object class="EventMixer" id="{8e8668f4-a38b-4b50-ad61-1d703874ec82}">
         <relationship name="masterBus">
@@ -50,7 +46,7 @@
             <destination>{cfcf5ef7-f5cb-4fe6-9246-bf2d74923dd6}</destination>
         </relationship>
         <relationship name="modules">
-            <destination>{e6d1f0d7-f636-4e75-98e3-420289cf77a1}</destination>
+            <destination>{9a670c11-51ca-4c13-bf11-0b8e26022bbb}</destination>
         </relationship>
         <relationship name="mixerGroup">
             <destination>{000bb2c8-1038-470b-834c-e215ba03d126}</destination>
@@ -58,23 +54,7 @@
     </object>
     <object class="Timeline" id="{57f224e0-4c93-4385-9a89-2ce7f0e5f18c}">
         <relationship name="modules">
-            <destination>{e6d1f0d7-f636-4e75-98e3-420289cf77a1}</destination>
-        </relationship>
-    </object>
-    <object class="GameParameter" id="{7a8f307b-913b-4e72-b0a2-a1d5c81bacb8}">
-        <property name="name">
-            <value>Type</value>
-        </property>
-        <relationship name="automationScale">
-            <destination>{74ae6ce6-f8de-4fe4-993e-fa1b5cffb1b8}</destination>
-        </relationship>
-    </object>
-    <object class="GameParameter" id="{4280deba-1b73-43d2-9bde-764ca82437a1}">
-        <property name="name">
-            <value>Texture</value>
-        </property>
-        <relationship name="automationScale">
-            <destination>{04353bca-723f-4423-86a7-a907d09dcc56}</destination>
+            <destination>{9a670c11-51ca-4c13-bf11-0b8e26022bbb}</destination>
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{6eccda07-06c1-40cb-8d21-33f1c95cebe1}">
@@ -99,17 +79,17 @@
             <destination>{000bb2c8-1038-470b-834c-e215ba03d126}</destination>
         </relationship>
     </object>
-    <object class="SingleSound" id="{e6d1f0d7-f636-4e75-98e3-420289cf77a1}">
+    <object class="MultiSound" id="{9a670c11-51ca-4c13-bf11-0b8e26022bbb}">
         <property name="start">
             <value>0</value>
         </property>
         <property name="length">
-            <value>1.0000000149011612</value>
+            <value>2</value>
         </property>
     </object>
     <object class="EventMixerGroup" id="{000bb2c8-1038-470b-834c-e215ba03d126}">
         <property name="name">
-            <value>Audio 1</value>
+            <value>Intro</value>
         </property>
         <relationship name="effectChain">
             <destination>{daf52c3d-8a58-4553-a8eb-454eae82d9b8}</destination>
@@ -120,28 +100,6 @@
         <relationship name="output">
             <destination>{6eccda07-06c1-40cb-8d21-33f1c95cebe1}</destination>
         </relationship>
-    </object>
-    <object class="AutomationScale" id="{74ae6ce6-f8de-4fe4-993e-fa1b5cffb1b8}">
-        <property name="curve">
-            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,100.000000)}</value>
-        </property>
-        <property name="associatedClassName">
-            <value>GameParameter</value>
-        </property>
-        <property name="associatedPropertyName">
-            <value>Parameter 1</value>
-        </property>
-    </object>
-    <object class="AutomationScale" id="{04353bca-723f-4423-86a7-a907d09dcc56}">
-        <property name="curve">
-            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,100.000000)}</value>
-        </property>
-        <property name="associatedClassName">
-            <value>GameParameter</value>
-        </property>
-        <property name="associatedPropertyName">
-            <value>Parameter 1</value>
-        </property>
     </object>
     <object class="MixerBusEffectChain" id="{a879a508-987c-40bf-bde0-dd91aeaeb719}">
         <relationship name="effects">
